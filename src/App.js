@@ -375,8 +375,7 @@ function App() {
                     viewport={{ once: true }}
                 >
 
-                  <div className="calendar_lemon left">🍋</div>
-                  <div className="calendar_lemon right">🍋</div>
+
 
                   <p className="calendar_title">
                     Il Nostro Giorno
