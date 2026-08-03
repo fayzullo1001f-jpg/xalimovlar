@@ -649,7 +649,10 @@ button:hover {
 
 /* GLASS CARD */
 .intro_box{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width:330px;
 
   padding:55px 35px;
