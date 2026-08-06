@@ -7,13 +7,13 @@ import musicFile from "./music/Davidzz17 - Time to say goodbye Instrumental.mp3"
 import play from "./img/circle-play-regular-full.svg";
 import pause from "./img/circle-pause-regular-full.svg";
 
-import wed_lw from "./img/Best-Wedding-Poses-Wedding-Posing-Ideas.jpg";
+import wed_lw from "./img/two.jpg";
 import restaurant from "./img/L_height.webp";
-import ring from "./img/newlyleds-exchanging-ring.jpg";
+import ring from "./img/fourjpg.jpg";
 
-import bride from "./img/a-perfect-start-to-happily-ever-after-scaled.jpg";
-
-import brides from "./img/4eee0d_30d8e13c5b794b31b7f73ce1b18b9783~mv2.png";
+import bride from "./img/one.jpg";
+import three from "./img/three.jpg"
+import brides from "./img/five.jpg";
 
 
 function App() {
@@ -409,7 +409,13 @@ function App() {
 
 
             <div className="cal_lemon">
-
+              <motion.img
+                  src={three}
+                  className="cal_lemon"
+                  variants={imgVariant}
+                  initial="hidden"
+                  whileInView="visible"
+              />
             </div>
                 </motion.section>
 
