@@ -452,27 +452,9 @@ function App() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                 >
-                  <h2>TO‘Y DASTURI</h2>
 
-                  <div className="timeline">
-                    {[
-                      ["17:00", "Mehmonlar kelishi"],
-                      ["18:00", "Boshlanish"],
-                      ["19:00", "Nikoh marosimi"],
-                      ["20:00", "Dastur davom etadi"],
-                      ["22:00", "Tort kesish 🎂"]
-                    ].map(([time, text], i) => (
-                        <div
-                            key={i}
-                            className="timeline_item"
-                        >
-                          <b>{time}</b>
-                          <span>{text}</span>
-                        </div>
-                    ))}
-                  </div>
 
-                  <motion.img
+                  <div className="timeline">  </div>                 <motion.img
                       src={ring}
                       className="ring"
                       variants={imgVariant}
