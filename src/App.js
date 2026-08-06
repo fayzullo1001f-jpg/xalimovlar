@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./App.css";
 
-import musicFile from "./music/asad.mp3";
+import musicFile from "./music/Davidzz17 - Time to say goodbye Instrumental.mp3";
 
 import play from "./img/circle-play-regular-full.svg";
 import pause from "./img/circle-pause-regular-full.svg";
@@ -487,9 +487,9 @@ function App() {
                   />
 
                   <p className="cl">Hurmat va ehtirom ila, <br/>
-                    Xalimovlar
+                    Xoshimovlar
                     oilasi. ❤️</p>
-                  <p className="asa"><span className="man"> 📍 Manzil:</span> <span className="ver">"Versal" </span>koshonalar saroyi </p>
+                  <p className="asa"><span className="man"> 📍 Manzil:</span> <span className="ver">"Versal" </span>Restorani </p>
                 </section>
               </div>
           )}
