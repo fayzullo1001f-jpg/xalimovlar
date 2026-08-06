@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const introTimer = setTimeout(() => {
       setShowIntro(false);
-    }, 5000);
+    }, 2000);
 
     return () => clearTimeout(introTimer);
   }, []);
@@ -290,14 +290,7 @@ function App() {
                     14 • AUGUST • 2026
                   </motion.p>
 
-                  <motion.div
-                      className={`music_btn ${isPlaying ? "playing" : ""}`}
-                      onClick={toggleMusic}
-                      whileTap={{ scale: 0.9 }}
-                      whileHover={{ scale: 1.1 }}
-                  >
-                    <img src={isPlaying ? pause : play} alt="" />
-                  </motion.div>
+
 
 
 
