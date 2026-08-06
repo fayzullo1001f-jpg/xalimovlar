@@ -290,7 +290,12 @@ function App() {
                     14 • AUGUST • 2026
                   </motion.p>
 
-
+                  <div className="music_btn" onClick={toggleMusic}>
+                    <img
+                        src={isPlaying ? pause : play}
+                        alt="music"
+                    />
+                  </div>
 
 
 
