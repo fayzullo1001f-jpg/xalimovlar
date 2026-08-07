@@ -388,28 +388,30 @@ function App() {
                     </div>
 
                     <div className="calendar">
-
-                      {["M","T","W","T","F","S","S"].map((d)=>(
-                          <div className="day_name">{d}</div>
+                      {["M", "T", "W", "T", "F", "S", "S"].map((d) => (
+                          <div key={d} className="day_name">
+                            {d}
+                          </div>
                       ))}
 
-                      {Array.from({length:31},(_,i)=>{
+                      {/* 2026-yil Avgust uchun bo'sh kataklar (1-avgust — Shanba) */}
+                      {Array.from({ length: 5 }).map((_, i) => (
+                          <div key={`empty-${i}`} className="day empty_day"></div>
+                      ))}
 
-                        const day=i+1;
+                      {Array.from({ length: 31 }, (_, i) => {
+                        const day = i + 1;
 
-                        return(
+                        return (
                             <div
                                 key={day}
-                                className={`day ${day===14 ? "active_day":""}`}
+                                className={`day ${day === 14 ? "active_day" : ""}`}
                             >
                               {day}
                             </div>
-                        )
-
+                        );
                       })}
-
                     </div>
-
                   </div>
 
 
